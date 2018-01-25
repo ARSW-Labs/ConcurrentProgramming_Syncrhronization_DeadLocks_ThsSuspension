@@ -1,0 +1,5 @@
+Parte 1
+
+1. El consumo que en este caso fue entre 12% y 13% se debe a que el consumidor se queda haciendo una espera activa, con el método pool se queda esperando y si la cola esta vacia retorna un null, esto aumenta el consumo de cpu. La
+clase responsable es la del Consumidor pues es el que esta haciendo esa espera.
+ 
