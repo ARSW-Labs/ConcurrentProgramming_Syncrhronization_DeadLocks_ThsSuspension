@@ -29,9 +29,10 @@ public class Consumer extends Thread{
             try {
                 int elem = (Integer)((LinkedBlockingQueue)queue).take();
                 System.out.println("Consumer consumes "+elem);
+                Thread.sleep(1000);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Consumer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-    }
+        }
 }
